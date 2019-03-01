@@ -3,23 +3,31 @@ const HEIGHT = 800
 const MARGIN = 100
 
 const AXES_COLOR = 150
-const AXES_WIDTH = 3
+const AXES_WEIGHT = 3
 
-const TEXT_COLOR = 100
-const TEXT_MARGIN = 40
+const GRADUATIONS_COLOR = 100
+const GRADUATIONS_MARGIN = 20
 
 const ARROW_SIZE = 10
+const ARROW_MARGIN = 50
 
 const FLAG_SIZE = 25
 
-const VERTICAL_AXE = "Happiness"
-const HORIZONTAL_AXE = "Average income"
-const AXE_MARGIN = 50
+const VERTICAL_AXE_TITLE = "Happiness"
+const HORIZONTAL_AXE_TITLE = "Average income"
+const AXE_TITLE_COLOR = 100
+const AXE_TITLE_MARGIN = 60
 const AXE_TITLE_SIZE = 25
+
+const VERTICAL_RES = 10
+const HORIZONTAL_RES = 12
+
+const GRID_WEIGHT = .5
+const GRID_COLOR = 170
 
 const data = [
   {
-    x: 2,
+    x: 1,
     y: 2,
     country: 'fr'
   },
@@ -79,10 +87,22 @@ function setup()
 {
 
   createCanvas(WIDTH, HEIGHT)
-
   fill(200)
   noStroke()
   rect(0, 0, width, height)
+
+  var maskImage = createGraphics(FLAG_SIZE * 550 / 367, FLAG_SIZE)
+  maskImage.background(0)
+  maskImage.fill(255)
+  maskImage.ellipseMode(RADIUS)
+  maskImage.ellipse(maskImage.width / 2, maskImage.height / 2, FLAG_SIZE / 2, FLAG_SIZE / 2)
+
+  // Cropping flags circle
+  for (var f of images)
+  {
+    f.im.mask(maskImage)
+    // image(maskImage, 100, 100)
+  }
 
   let origin = [MARGIN, height - MARGIN]
   let p1 = [origin[0], MARGIN]
@@ -93,39 +113,74 @@ function setup()
 
   // Vertical axe
   stroke(AXES_COLOR)
-  strokeWeight(AXES_WIDTH)
-  line(origin[0], origin[1], p1[0], p1[1])
+  strokeWeight(AXES_WEIGHT)
+  line(origin[0], origin[1], p1[0], p1[1] - ARROW_MARGIN)
 
   // Horizontal axe
-  line(origin[0], origin[1], p2[0], p2[1])
+  line(origin[0], origin[1], p2[0] + ARROW_MARGIN, p2[1])
 
   // Top arrow
-  line(p1[0], p1[1], p1[0] - ARROW_SIZE, p1[1] + ARROW_SIZE)
-  line(p1[0], p1[1], p1[0] + ARROW_SIZE, p1[1] + ARROW_SIZE)
+  line(p1[0], p1[1] - ARROW_MARGIN, p1[0] - ARROW_SIZE, p1[1] - ARROW_MARGIN + ARROW_SIZE)
+  line(p1[0], p1[1] - ARROW_MARGIN, p1[0] + ARROW_SIZE, p1[1] - ARROW_MARGIN + ARROW_SIZE)
 
   // Bottom arrow
-  line(p2[0], p2[1], p2[0] - ARROW_SIZE, p2[1] - ARROW_SIZE)
-  line(p2[0], p2[1], p2[0] - ARROW_SIZE, p2[1] + ARROW_SIZE)
+  line(p2[0] + ARROW_MARGIN, p2[1], p2[0] - ARROW_SIZE + ARROW_MARGIN, p2[1] - ARROW_SIZE)
+  line(p2[0] + ARROW_MARGIN, p2[1], p2[0] - ARROW_SIZE + ARROW_MARGIN, p2[1] + ARROW_SIZE)
 
-  fill(TEXT_COLOR)
+  fill(AXE_TITLE_COLOR)
   textFont('PT Mono')
   textSize(AXE_TITLE_SIZE)
   textAlign(CENTER, CENTER)
   noStroke()
 
+  textStyle(BOLD)
   // Vertical axe name
   push()
-  translate(origin[0] - AXE_MARGIN, height / 2)
+  translate(origin[0] - AXE_TITLE_MARGIN, height / 2)
   rotate(-1/2 * PI)
-  text(VERTICAL_AXE, 0, 0)
+  text(VERTICAL_AXE_TITLE, 0, 0)
   pop()
 
   // Horizontal axe name
-  text(HORIZONTAL_AXE, width / 2, origin[1] + AXE_MARGIN)
+  text(HORIZONTAL_AXE_TITLE, width / 2, origin[1] + AXE_TITLE_MARGIN)
+  textStyle(NORMAL)
 
-  // Draw data
   let min_max = get_min_max()
   let axes_length = get_axes_length()
+
+  // Draw scale text
+  textSize(20)
+
+  fill(GRADUATIONS_COLOR)
+
+  // Origin values
+  text(min_max[2], origin[0] - GRADUATIONS_MARGIN, origin[1])
+  text(min_max[0], origin[0], origin[1] + GRADUATIONS_MARGIN)
+
+  // Horizontal graduation
+  for (var i = 1; i < HORIZONTAL_RES + 1; i++)
+  {
+    noStroke()
+    text(Math.round(min_max[0] + i * ((min_max[1] - min_max[0]) / HORIZONTAL_RES)), origin[0] + (axes_length[0] / HORIZONTAL_RES * i), origin[1] + GRADUATIONS_MARGIN)
+
+    stroke(GRID_COLOR)
+    strokeWeight(GRID_WEIGHT)
+    line(origin[0] + (axes_length[0] / HORIZONTAL_RES * i), origin[1], origin[0] + (axes_length[0] / HORIZONTAL_RES * i), p1[1])
+
+  }
+
+  // Vertical graduation
+  for (var i = 1; i < VERTICAL_RES + 1; i++)
+  {
+    noStroke()
+    text(Math.round(min_max[0] + i * ((min_max[3] - min_max[2]) / VERTICAL_RES)), origin[0] - GRADUATIONS_MARGIN, origin[1] - (axes_length[1] / VERTICAL_RES * i))
+
+    stroke(GRID_COLOR)
+    strokeWeight(GRID_WEIGHT)
+    line(origin[0], origin[1] - (axes_length[1] / VERTICAL_RES * i), p2[0], origin[1] - (axes_length[1] / VERTICAL_RES * i))
+  }
+
+  // Draw data
   for (var p of data)
   {
     let coords = get_coords(p, min_max, origin, axes_length)
@@ -133,19 +188,8 @@ function setup()
     noStroke()
     imageMode(CENTER, CENTER)
     // Dimension of flags : 550x367
-    image(get_image(p), coords[0], coords[1], FLAG_SIZE * 550 / 367, FLAG_SIZE)
+    image(get_image(p, maskImage), coords[0], coords[1], FLAG_SIZE * 550 / 367, FLAG_SIZE)
   }
-
-  // Draw scale text
-  textSize(20)
-
-  // Min
-  text(min_max[0], origin[0] - TEXT_MARGIN, origin[1])
-  text(min_max[2], origin[0], origin[1] + TEXT_MARGIN)
-
-  // Max
-  text(min_max[1], p1[0] - TEXT_MARGIN, p1[1])
-  text(min_max[3], p2[0], p2[1] + TEXT_MARGIN)
 
 }
 
@@ -208,7 +252,7 @@ function get_axes_length()
   return [width - 2 * MARGIN, height - 2 * MARGIN]
 }
 
-function get_image(point)
+function get_image(point, maskImage)
 {
   for (var i of images)
   {
