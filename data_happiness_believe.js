@@ -1,0 +1,741 @@
+var data = [{
+  x: 53.0,
+  y: 4.586,
+  country: "Albanie",
+  code: "al"
+}, {
+  x: 9.0,
+  y: 5.295,
+  country: "Alg\u00e9rie",
+  code: "ag"
+}, {
+  x: 3.0,
+  y: 3.632,
+  country: "Afghanistan",
+  code: "af"
+}, {
+  x: 62.0,
+  y: 6.965,
+  country: "Allemagne",
+  code: "de"
+}, {
+  x: 20.0,
+  y: 4.724,
+  country: "Afrique du Sud",
+  code: "za"
+}, {
+  x: 10.0,
+  y: 3.795,
+  country: "Angola",
+  code: "ao"
+}, {
+  x: 4.0,
+  y: 6.371,
+  country: "Arabie saoudite",
+  code: "sa"
+}, {
+  x: 30.0,
+  y: 6.388,
+  country: "Argentine",
+  code: "ar"
+}, {
+  x: 18.0,
+  y: 4.321,
+  country: "Arm\u00e9nie",
+  code: "am"
+}, {
+  x: 67.0,
+  y: 7.272,
+  country: "Australie",
+  code: "as"
+}, {
+  x: 51.0,
+  y: 7.139,
+  country: "Autriche",
+  code: "at"
+}, {
+  x: 54.0,
+  y: 5.201,
+  country: "Azerba\u00efdjan",
+  code: "az"
+}, {
+  x: 10.0,
+  y: 6.105,
+  country: "Bahre\u00efn",
+  code: "ba"
+}, {
+  x: 12.0,
+  y: 4.5,
+  country: "Bangladesh",
+  code: "bg"
+}, {
+  x: 50.0,
+  y: 5.483,
+  country: "Bi\u00e9lorussie",
+  code: "bo"
+}, {
+  x: 68.0,
+  y: 6.927,
+  country: "Belgique",
+  code: "be"
+}, {
+  x: 33.0,
+  y: 5.956,
+  country: "B\u00e9lize",
+  code: "bz"
+}, {
+  x: 6.0,
+  y: 4.141,
+  country: "B\u00e9nin",
+  code: "bn"
+}, {
+  x: 13.0,
+  y: 5.752,
+  country: "Bolivie",
+  code: "bl"
+}, {
+  x: 38.0,
+  y: 5.129,
+  country: "Bosnie-Herz\u00e9govine",
+  code: "ba"
+}, {
+  x: 16.0,
+  y: 3.59,
+  country: "Botswana",
+  code: "bw"
+}, {
+  x: 10.0,
+  y: 6.419,
+  country: "Br\u00e9sil",
+  code: "br"
+}, {
+  x: 58.0,
+  y: 4.933,
+  country: "Bulgarie",
+  code: "bg"
+}, {
+  x: 6.0,
+  y: 4.424,
+  country: "Burkina Faso",
+  code: "bf"
+}, {
+  x: 2.0,
+  y: 2.905,
+  country: "Burundi",
+  code: "by"
+}, {
+  x: 3.0,
+  y: 4.433,
+  country: "Cambodge",
+  code: "kh"
+}, {
+  x: 6.0,
+  y: 4.975,
+  country: "Cameroun",
+  code: "cm"
+}, {
+  x: 61.0,
+  y: 7.328,
+  country: "Canada",
+  code: "ca"
+}, {
+  x: 7.0,
+  y: 4.301,
+  country: "Tchad",
+  code: "cd"
+}, {
+  x: 27.0,
+  y: 6.476,
+  country: "Chili",
+  code: "cl"
+}, {
+  x: 82.0,
+  y: 5.246,
+  country: "Chine",
+  code: "ch"
+}, {
+  x: 13.0,
+  y: 6.26,
+  country: "Colombie",
+  code: "co"
+}, {
+  x: 52.0,
+  y: 5.875,
+  country: "Cor\u00e9e du Sud",
+  code: "kr"
+}, {
+  x: 17.0,
+  y: 7.072,
+  country: "Costa Rica",
+  code: "cr"
+}, {
+  x: 12.0,
+  y: 4.671,
+  country: "C\u00f4te d'Ivoire",
+  code: "ci"
+}, {
+  x: 29.0,
+  y: 5.321,
+  country: "Croatie",
+  code: "hr"
+}, {
+  x: 26.0,
+  y: 5.762,
+  country: "Chypre",
+  code: "cy"
+}, {
+  x: 72.0,
+  y: 6.711,
+  country: "R\u00e9publique tch\u00e8que",
+  code: "cz"
+}, {
+  x: 83.0,
+  y: 7.555,
+  country: "Danemark",
+  code: "dk"
+}, {
+  x: 4.0,
+  y: 4.419,
+  country: "\u00c9gypte",
+  code: "eg"
+}, {
+  x: 4.0,
+  y: 6.774,
+  country: "\u00c9mirats arabes unis",
+  code: "tc"
+}, {
+  x: 5.0,
+  y: 5.973,
+  country: "\u00c9quateur",
+  code: "ec"
+}, {
+  x: 55.0,
+  y: 6.31,
+  country: "Espagne",
+  code: "es"
+}, {
+  x: 78.0,
+  y: 5.739,
+  country: "Estonie",
+  code: "ee"
+}, {
+  x: 36.0,
+  y: 6.886,
+  country: "\u00c9tats-Unis",
+  code: "us"
+}, {
+  x: 10.0,
+  y: 4.35,
+  country: "\u00c9thiopie",
+  code: "et"
+}, {
+  x: 69.0,
+  y: 7.632,
+  country: "Finlande",
+  code: "fi"
+}, {
+  x: 57.0,
+  y: 6.489,
+  country: "France",
+  code: "fr"
+}, {
+  x: 15.0,
+  y: 4.34,
+  country: "G\u00e9orgie",
+  code: "gg"
+}, {
+  x: 4.0,
+  y: 3.964,
+  country: "Guin\u00e9e",
+  code: "gn"
+}, {
+  x: 24.0,
+  y: 5.358,
+  country: "Gr\u00e8ce",
+  code: "gr"
+}, {
+  x: 15.0,
+  y: 6.382,
+  country: "Guatemala",
+  code: "gt"
+}, {
+  x: 2.0,
+  y: 3.964,
+  country: "Guin\u00e9e",
+  code: "gn"
+}, {
+  x: 8.0,
+  y: 3.582,
+  country: "Ha\u00efti",
+  code: "ht"
+}, {
+  x: 13.0,
+  y: 5.504,
+  country: "Honduras",
+  code: "hn"
+}, {
+  x: 74.0,
+  y: 5.43,
+  country: "Hong Kong",
+  code: "hk"
+}/*, {
+  x: 63.0,
+  y: 5.62,
+  country: "Hongrie",
+  code: "hu"
+}*/, {
+  x: 60.0,
+  y: 7.495,
+  country: "Islande",
+  code: "is"
+}, {
+  x: 9.0,
+  y: 4.19,
+  country: "Inde",
+  code: "in"
+}, {
+  x: 1.0,
+  y: 5.093,
+  country: "Indon\u00e9sie",
+  code: "id"
+}, {
+  x: 8.0,
+  y: 4.707,
+  country: "Iran",
+  code: "ir"
+}, {
+  x: 15.0,
+  y: 4.456,
+  country: "Irak",
+  code: "iq"
+}, {
+  x: 53.0,
+  y: 6.977,
+  country: "Irlande",
+  code: "ie"
+}, {
+  x: 54.0,
+  y: 7.19,
+  country: "Isra\u00ebl",
+  code: "is"
+}, {
+  x: 30.0,
+  y: 6.0,
+  country: "Italie",
+  code: "it"
+}, {
+  x: 29.0,
+  y: 5.89,
+  country: "Jama\u00efque",
+  code: "jm"
+}, {
+  x: 89.0,
+  y: 5.915,
+  country: "Japon",
+  code: "jp"
+}, {
+  x: 4.0,
+  y: 5.161,
+  country: "Jordanie",
+  code: "jo"
+}, {
+  x: 45.0,
+  y: 5.79,
+  country: "Kazakhstan",
+  code: "kz"
+}, {
+  x: 3.0,
+  y: 4.41,
+  country: "Kenya",
+  code: "ke"
+}, {
+  x: 9.0,
+  y: 5.662,
+  country: "Kosovo",
+  code: "xk"
+}/*, {
+  x: 2.0,
+  y: 6.083,
+  country: "Kowe\u00eft",
+  code: "ku"
+}*/, {
+  x: 36.0,
+  y: 5.131,
+  country: "Kirghizistan",
+  code: "kg"
+}, {
+  x: 3.0,
+  y: 4.623,
+  country: "Laos",
+  code: "la"
+}/*, {
+  x: 58.0,
+  y: 5.933,
+  country: "Lettonie",
+  code: "lg"
+}/*, {
+  x: 13.0,
+  y: 5.199,
+  country: "Liban",
+  code: "le"
+}*/, {
+  x: 7.0,
+  y: 3.495,
+  country: "Liberia",
+  code: "li"
+}, {
+  x: 12.0,
+  y: 5.566,
+  country: "Libye",
+  code: "ly"
+}, {
+  x: 52.0,
+  y: 5.952,
+  country: "Lituanie",
+  code: "lt"
+}, {
+  x: 64.0,
+  y: 6.91,
+  country: "Luxembourg",
+  code: "lu"
+}, {
+  x: 23.0,
+  y: 5.185,
+  country: "Mac\u00e9doine",
+  code: "mk"
+}, {
+  x: 7.0,
+  y: 3.774,
+  country: "Madagascar",
+  code: "ma"
+}, {
+  x: 1.0,
+  y: 3.587,
+  country: "Malawi",
+  code: "mw"
+}, {
+  x: 10.0,
+  y: 6.322,
+  country: "Malaisie",
+  code: "my"
+}, {
+  x: 3.0,
+  y: 4.447,
+  country: "Mali",
+  code: "ml"
+}, {
+  x: 14.0,
+  y: 6.627,
+  country: "Malte",
+  code: "mt"
+}, {
+  x: 2.0,
+  y: 4.356,
+  country: "Mauritanie",
+  code: "mr"
+}, {
+  x: 20.0,
+  y: 6.488,
+  country: "Mexique",
+  code: "mx"
+}, {
+  x: 21.0,
+  y: 5.64,
+  country: "Moldavie",
+  code: "md"
+}, {
+  x: 50.0,
+  y: 5.125,
+  country: "Mongolie",
+  code: "mg"
+}, {
+  x: 38.0,
+  y: 5.347,
+  country: "Mont\u00e9n\u00e9gro",
+  code: "me"
+}, {
+  x: 6.0,
+  y: 5.254,
+  country: "Maroc",
+  code: "mo"
+}, {
+  x: 13.0,
+  y: 4.308,
+  country: "Birmanie",
+  code: "bm"
+}, {
+  x: 8.0,
+  y: 4.441,
+  country: "Namibie",
+  code: "na"
+}, {
+  x: 5.0,
+  y: 4.88,
+  country: "N\u00e9pal",
+  code: "np"
+}, {
+  x: 65.0,
+  y: 7.441,
+  country: "Pays-Bas",
+  code: "nl"
+}, {
+  x: 67.0,
+  y: 7.324,
+  country: "Nouvelle-Z\u00e9lande",
+  code: "nz"
+}, {
+  x: 19.0,
+  y: 6.141,
+  country: "Nicaragua",
+  code: "nu"
+}, {
+  x: 2.0,
+  y: 4.166,
+  country: "Niger",
+  code: "ng"
+}, {
+  x: 2.0,
+  y: 5.155,
+  country: "Nigeria",
+  code: "ni"
+}, {
+  x: 78.0,
+  y: 7.594,
+  country: "Norv\u00e8ge",
+  code: "no"
+}, {
+  x: 4.0,
+  y: 5.472,
+  country: "Pakistan",
+  code: "pk"
+}, {
+  x: 5.0,
+  y: 4.743,
+  country: "Palestine",
+  code: "ps"
+}, {
+  x: 11.0,
+  y: 6.43,
+  country: "Panama",
+  code: "pm"
+}, {
+  x: 10.0,
+  y: 5.681,
+  country: "Paraguay",
+  code: "pa"
+}, {
+  x: 12.0,
+  y: 5.663,
+  country: "P\u00e9rou",
+  code: "pe"
+}, {
+  x: 6.0,
+  y: 5.524,
+  country: "Philippines",
+  code: "ph"
+}, {
+  x: 25.0,
+  y: 6.123,
+  country: "Pologne",
+  code: "pl"
+}, {
+  x: 33.0,
+  y: 5.41,
+  country: "Portugal",
+  code: "pt"
+}, {
+  x: 4.0,
+  y: 6.374,
+  country: "Qatar",
+  code: "qa"
+}, {
+  x: 1.0,
+  y: 3.083,
+  country: "R\u00e9publique centrafricaine",
+  code: "cf"
+}, {
+  x: 5.0,
+  y: 4.245,
+  country: "R\u00e9publique d\u00e9mocratique du Congo",
+  code: "cg"
+}, {
+  x: 6.0,
+  y: 4.559,
+  country: "R\u00e9publique du Congo",
+  code: "cf"
+}, {
+  x: 14.0,
+  y: 5.302,
+  country: "R\u00e9publique dominicaine",
+  code: "do"
+}, {
+  x: 17.0,
+  y: 5.945,
+  country: "Roumanie",
+  code: "ro"
+}, {
+  x: 59.0,
+  y: 5.81,
+  country: "Russie",
+  code: "rs"
+}, {
+  x: 5.0,
+  y: 3.408,
+  country: "Rwanda",
+  code: "rw"
+}, {
+  x: 24.0,
+  y: 6.167,
+  country: "Salvador",
+  code: "sv"
+}, {
+  x: 3.0,
+  y: 4.631,
+  country: "S\u00e9n\u00e9gal",
+  code: "sg"
+}, {
+  x: 45.0,
+  y: 5.398,
+  country: "Serbie",
+  code: 'rs'
+}, {
+  x: 1.0,
+  y: 4.571,
+  country: "Sierra Leone",
+  code: "sl"
+}, {
+  x: 53.0,
+  y: 6.343,
+  country: "Singapour",
+  code: "sn"
+}, {
+  x: 45.0,
+  y: 6.173,
+  country: "Slovaquie",
+  code: "sk"
+}, {
+  x: 51.0,
+  y: 5.948,
+  country: "Slov\u00e9nie",
+  code: "si"
+}, {
+  x: 2.0,
+  y: 4.471,
+  country: "Sri Lanka",
+  code: "lk"
+}, {
+  x: 9.0,
+  y: 4.139,
+  country: "Soudan",
+  code: "ss"
+}, {
+  x: 88.0,
+  y: 7.314,
+  country: "Su\u00e8de",
+  code: "se"
+}, {
+  x: 57.0,
+  y: 7.487,
+  country: "Suisse",
+  code: "sz"
+}, {
+  x: 15.0,
+  y: 3.462,
+  country: "Syrie",
+  code: "sy"
+}, {
+  x: 45.0,
+  y: 6.441,
+  country: "Ta\u00efwan",
+  code: "tw"
+}, {
+  x: 11.0,
+  y: 5.358,
+  country: "Tadjikistan",
+  code: "tj"
+}, {
+  x: 5.0,
+  y: 3.303,
+  country: "Tanzanie",
+  code: "tz"
+}, {
+  x: 2.0,
+  y: 6.072,
+  country: "Tha\u00eflande",
+  code: "th"
+}, {
+  x: 13.0,
+  y: 3.999,
+  country: "Togo",
+  code: "tg"
+}, {
+  x: 8.0,
+  y: 6.192,
+  country: "Trinit\u00e9-et-Tobago",
+  code: "td"
+}, {
+  x: 7.0,
+  y: 4.592,
+  country: "Tunisie",
+  code: "tn"
+}, {
+  x: 18.0,
+  y: 5.636,
+  country: "Turkm\u00e9nistan",
+  code: "tm"
+}, {
+  x: 13.0,
+  y: 5.483,
+  country: "Turquie",
+  code: "tr"
+}, {
+  x: 5.0,
+  y: 4.161,
+  country: "Ouganda",
+  code: "ug"
+}, {
+  x: 46.0,
+  y: 4.103,
+  country: "Ukraine",
+  code: "ua"
+}, {
+  x: 76.0,
+  y: 6.814,
+  country: "Royaume-Uni",
+  code: "gb"
+}, {
+  x: 64.0,
+  y: 6.379,
+  country: "Uruguay",
+  code: "uy"
+}, {
+  x: 39.0,
+  y: 6.096,
+  country: "Ouzb\u00e9kistan",
+  code: "uz"
+}, {
+  x: 19.0,
+  y: 4.806,
+  country: "Venezuela",
+  code: "ve"
+}, {
+  x: 44.0,
+  y: 5.103,
+  country: "Vietnam",
+  code: "vn"
+}, {
+  x: 1.0,
+  y: 3.355,
+  country: "Y\u00e9men",
+  code: "ye"
+}, {
+  x: 5.0,
+  y: 4.377,
+  country: "Zambie",
+  code: "za"
+}, {
+  x: 9.0,
+  y: 3.692,
+  country: "Zimbabwe",
+  code: "zw"
+}]

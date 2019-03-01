@@ -1,23 +1,23 @@
 const WIDTH = 1300
 const HEIGHT = 800
-const MARGIN = 100
+const MARGIN = 150
 
 const AXES_COLOR = 150
 const AXES_WEIGHT = 3
 
 const GRADUATIONS_COLOR = 100
-const GRADUATIONS_MARGIN = 20
+const GRADUATIONS_MARGIN = 40
 
 const ARROW_SIZE = 10
 const ARROW_MARGIN = 50
 
 const FLAG_SIZE = 25
 
-const VERTICAL_AXE_TITLE = "Happiness"
-const HORIZONTAL_AXE_TITLE = "Average income"
+const HORIZONTAL_AXE_TITLE = "Gallup indice"
+const VERTICAL_AXE_TITLE = "Happiness out of 10"
 const AXE_TITLE_COLOR = 100
-const AXE_TITLE_MARGIN = 60
-const AXE_TITLE_SIZE = 25
+const AXE_TITLE_MARGIN = 90
+const AXE_TITLE_SIZE = 20
 
 const VERTICAL_RES = 10
 const HORIZONTAL_RES = 12
@@ -25,6 +25,7 @@ const HORIZONTAL_RES = 12
 const GRID_WEIGHT = .5
 const GRID_COLOR = 170
 
+/*
 const data = [
   {
     x: 1,
@@ -67,6 +68,7 @@ const data = [
     country: 'kw'
   }
 ]
+*/
 
 const images = []
 
@@ -76,8 +78,8 @@ function preload()
   for (var p of data)
   {
     images.push({
-      im: loadImage('flags/' + p.country + '.png'),
-      country: p.country
+      im: loadImage('flags/' + p.code + '.png'),
+      country: p.code
     })
   }
 
@@ -91,18 +93,12 @@ function setup()
   noStroke()
   rect(0, 0, width, height)
 
-  var maskImage = createGraphics(FLAG_SIZE * 550 / 367, FLAG_SIZE)
-  maskImage.background(0)
-  maskImage.fill(255)
-  maskImage.ellipseMode(RADIUS)
-  maskImage.ellipse(maskImage.width / 2, maskImage.height / 2, FLAG_SIZE / 2, FLAG_SIZE / 2)
-
-  // Cropping flags circle
-  for (var f of images)
-  {
-    f.im.mask(maskImage)
-    // image(maskImage, 100, 100)
-  }
+  /*var mask = createGraphics(Math.floor(FLAG_SIZE * 550 / 367), FLAG_SIZE)
+  mask.background(0)
+  mask.fill(255)
+  mask.ellipseMode(RADIUS)
+  mask.ellipse(mask.width / 2, mask.height / 2, FLAG_SIZE / 2, FLAG_SIZE / 2)
+  var maskImage = graphics_to_image(mask)*/
 
   let origin = [MARGIN, height - MARGIN]
   let p1 = [origin[0], MARGIN]
@@ -154,14 +150,14 @@ function setup()
   fill(GRADUATIONS_COLOR)
 
   // Origin values
-  text(min_max[2], origin[0] - GRADUATIONS_MARGIN, origin[1])
+  text(rnd(min_max[2], 1), origin[0] - GRADUATIONS_MARGIN, origin[1])
   text(min_max[0], origin[0], origin[1] + GRADUATIONS_MARGIN)
 
   // Horizontal graduation
   for (var i = 1; i < HORIZONTAL_RES + 1; i++)
   {
     noStroke()
-    text(Math.round(min_max[0] + i * ((min_max[1] - min_max[0]) / HORIZONTAL_RES)), origin[0] + (axes_length[0] / HORIZONTAL_RES * i), origin[1] + GRADUATIONS_MARGIN)
+    text(rnd(min_max[0] + i * ((min_max[1] - min_max[0]) / HORIZONTAL_RES), 0), origin[0] + (axes_length[0] / HORIZONTAL_RES * i), origin[1] + GRADUATIONS_MARGIN)
 
     stroke(GRID_COLOR)
     strokeWeight(GRID_WEIGHT)
@@ -173,7 +169,7 @@ function setup()
   for (var i = 1; i < VERTICAL_RES + 1; i++)
   {
     noStroke()
-    text(Math.round(min_max[0] + i * ((min_max[3] - min_max[2]) / VERTICAL_RES)), origin[0] - GRADUATIONS_MARGIN, origin[1] - (axes_length[1] / VERTICAL_RES * i))
+    text(rnd(min_max[2] + i * ((min_max[3] - min_max[2]) / VERTICAL_RES), 1), origin[0] - GRADUATIONS_MARGIN, origin[1] - (axes_length[1] / VERTICAL_RES * i))
 
     stroke(GRID_COLOR)
     strokeWeight(GRID_WEIGHT)
@@ -188,8 +184,17 @@ function setup()
     noStroke()
     imageMode(CENTER, CENTER)
     // Dimension of flags : 550x367
-    image(get_image(p, maskImage), coords[0], coords[1], FLAG_SIZE * 550 / 367, FLAG_SIZE)
+    var img = get_image(p)
+    print(img)
+    // img.mask(maskImage)
+    image(img, coords[0], coords[1], FLAG_SIZE * 550 / 367, FLAG_SIZE)
   }
+
+  // Copyright and source
+  fill(100)
+  noStroke()
+  textSize(15)
+  text("Tom Marx - 2019", width / 2, height - 20)
 
 }
 
@@ -252,13 +257,38 @@ function get_axes_length()
   return [width - 2 * MARGIN, height - 2 * MARGIN]
 }
 
-function get_image(point, maskImage)
+function get_image(point)
 {
   for (var i of images)
   {
-    if (i.country == point.country)
+    if (i.country == point.code)
     {
       return i.im
     }
   }
+}
+
+function graphics_to_image(graphics)
+{
+  var img = createImage(graphics.width, graphics.height)
+  img.loadPixels()
+  graphics.loadPixels()
+    for (var x = 0; x < img.width; x++)
+    {
+      for (var y = 0; y < img.height; y++)
+      {
+        idx = 4 * (y * img.width + x)
+        img.pixels[idx] = graphics.pixels[idx]
+        img.pixels[idx+1] = graphics.pixels[idx+1]
+        img.pixels[idx+2] = graphics.pixels[idx+2]
+        img.pixels[idx+3] = graphics.pixels[idx+3]
+      }
+    }
+  img.updatePixels()
+  return img
+}
+
+function rnd(x, d)
+{
+  return (Math.round(x * Math.pow(10, d))) / Math.pow(10, d)
 }

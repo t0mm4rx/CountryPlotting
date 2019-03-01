@@ -1,0 +1,73 @@
+https://fr.wikipedia.org/wiki/Salaire_moyen_par_pays
+1	Drapeau du Luxembourg Luxembourg	$4,089
+2	Drapeau de la Norvège Norvège	$3,678
+3	Drapeau de l'Autriche Autriche	$3,437
+4	Drapeau des États-Unis États-Unis	$3,263
+5	Drapeau du Royaume-Uni Royaume-Uni	$3,065
+6	Drapeau de la Belgique Belgique	$3,035
+7	Drapeau de la Suède Suède	$3,023
+8	Drapeau de l'Irlande Irlande	$2,997
+9	Drapeau de la Finlande Finlande	$2,925
+10	Drapeau de la Corée du Sud Corée du Sud	$2,903
+11	Drapeau de la France France	$2,886
+12	Drapeau du Canada Canada	$2,724
+13	Drapeau de l'Allemagne Allemagne	$2,720
+14	Drapeau de Singapour Singapour	$2,616
+15	Drapeau de l'Australie Australie	$2,610
+16	Drapeau de Chypre Chypre	$2,605
+17	Drapeau du Japon Japon	$2,522
+18	Drapeau de l'Italie Italie	$2,445
+19	Drapeau de l'Islande Islande	$2,431
+20	Drapeau de l'Espagne Espagne	$2,352
+21	Drapeau de la Grèce Grèce	$2,300
+22	Drapeau de la Nouvelle-Zélande Nouvelle-Zélande	$2,283
+23	Drapeau d'Afrique du Sud Afrique du Sud	$1,838
+24	Drapeau de Malte Malte	$1,808
+25	Drapeau d’Israël Israël	$1,804
+26	Drapeau de la République tchèque République tchèque	$1,786
+27	Drapeau de la Croatie Croatie	$1,756
+28	Drapeau de la Turquie Turquie	$1,731
+29	Drapeau du Qatar Qatar	$1,690
+30	Drapeau de Hong Kong Hong Kong	$1,545
+31	Drapeau de la Pologne Pologne	$1,536
+32	Drapeau de la Slovaquie Slovaquie	$1,385
+33	Drapeau de la Hongrie Hongrie	$1,374
+34	Drapeau de la Macédoine du Nord Macédoine	$1,345
+35	Drapeau de la Bosnie-Herzégovine Bosnie-Herzégovine	$1,338
+36	Drapeau de l'Estonie Estonie	$1,267
+37	Drapeau de la Russie Russie	$1,215
+38	Drapeau de la Jamaïque Jamaïque	$1,135
+39	Drapeau de la Lituanie Lituanie	$1,109
+40	Drapeau de l'Argentine Argentine	$1,108
+41	Drapeau de la Lettonie Lettonie	$1,098
+42	Drapeau de la Serbie Serbie	$1,058
+43	Drapeau du Chili Chili	$1,021
+44	Drapeau du Botswana Botswana	$996
+45	Drapeau de la Malaisie Malaisie	$961
+46	Drapeau de la Biélorussie Belarus	$959
+47	Drapeau de la Roumanie Roumanie	$954
+48	Drapeau de Bahreïn Bahrain	$917
+49	Drapeau du Panama Panama	$831
+50	Drapeau de Maurice Maurice	$783
+51	Drapeau du Brésil Brésil	$778
+52	Drapeau de Macao Macao	$758
+53	Drapeau du Kazakhstan Kazakhstan	$753
+54	Drapeau de la Bulgarie Bulgarie	$750
+55	Drapeau de la Colombie Colombie	$692
+56	Drapeau de l'Ukraine Ukraine	$686
+57	Drapeau de la République populaire de Chine Chine	$656
+58	Drapeau du Mexique Mexique	$609
+59	Drapeau de la Géorgie Géorgie	$603
+60	Drapeau de l'Azerbaïdjan Azerbaïdjan	$596
+61	Drapeau de l'Égypte Égypte	$548
+62	Drapeau de la Thaïlande Thaïlande	$489
+63	Drapeau de l'Arménie Arménie	$471
+64	Drapeau de la République dominicaine République dominicaine	$462
+65	Drapeau de la Moldavie Moldavie	$438
+66	Drapeau de la Mongolie Mongolie	$415
+67	Drapeau de la Syrie Syrie	$364
+68	Drapeau du Kirghizistan Kirghizistan	$336
+69	Drapeau de l'Inde Inde	$295
+70	Drapeau des Philippines Philippines	$279
+71	Drapeau du Pakistan Pakistan	$255
+72	Drapeau du Tadjikistan Tadjikistan	$227

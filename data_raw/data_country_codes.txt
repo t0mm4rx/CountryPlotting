@@ -1,0 +1,192 @@
+AC ATG  Drapeau d'Antigua-et-Barbuda Antigua-et-Barbuda
+AF AFG  Drapeau de l'Afghanistan Afghanistan
+AG DZA  Drapeau de l'Algérie Algérie
+AJ AZE  Drapeau de l'Azerbaïdjan Azerbaïdjan
+AL ALB  Drapeau de l'Albanie Albanie
+AM ARM  Drapeau de l'Arménie Arménie
+AN AND  Drapeau d'Andorre Andorre
+AO AGO  Drapeau de l'Angola Angola
+AR ARG  Drapeau de l'Argentine Argentine
+AS AUS  Drapeau de l'Australie Australie
+AT AUT  Drapeau de l'Autriche Autriche
+BA BHR  Drapeau de Bahreïn Bahreïn
+BB BRB  Drapeau de la Barbade Barbade
+BC BWA  Drapeau du Botswana Botswana
+BE BEL  Drapeau de la Belgique Belgique
+BF BHS  Drapeau des Bahamas Bahamas
+BG BGD  Drapeau du Bangladesh Bangladesh
+BH BLZ  Drapeau du Belize Belize
+BK BIH  Drapeau de la Bosnie-Herzégovine Bosnie-Herzégovine
+BL BOL  Drapeau de la Bolivie Bolivie
+BM MMR  Drapeau de la Birmanie Birmanie
+BN BEN  Drapeau du Bénin Bénin
+BO BLR  Drapeau de la Biélorussie Biélorussie
+BP SLB  Drapeau des Salomon Salomon
+BR BRA  Drapeau du Brésil Brésil
+BT BTN  Drapeau du Bhoutan Bhoutan
+BU BGR  Drapeau de la Bulgarie Bulgarie
+BX BRN  Drapeau du Brunei Brunei
+BY BDI  Drapeau du Burundi Burundi
+CA CAN  Drapeau du Canada Canada
+CB KHM  Drapeau du Cambodge Cambodge
+CD TCD  Drapeau du Tchad Tchad
+CE LKA  Drapeau du Sri Lanka Sri Lanka
+CF COG  Drapeau de la République du Congo République du Congo
+CG COD  Drapeau de la République démocratique du Congo République démocratique du Congo
+CH CHN  Drapeau de la République populaire de Chine Chine
+CL CHL  Drapeau du Chili Chili
+CM CMR  Drapeau du Cameroun Cameroun
+CN COM  Drapeau des Comores Comores
+CO COL  Drapeau de la Colombie Colombie
+CS CRI  Drapeau du Costa Rica Costa Rica
+CT CAF  Drapeau de la République centrafricaine République centrafricaine
+CU CUB  Drapeau de Cuba Cuba
+CV CPV  Drapeau du Cap-Vert Cap-Vert
+CY CYP  Drapeau de Chypre Chypre
+CZ CZE  Drapeau de la République tchèque République tchèque
+DA DNK  Drapeau du Danemark Danemark
+DJ DJI  Drapeau de Djibouti Djibouti
+DO DMA  Drapeau de la Dominique Dominique
+DR DOM  Drapeau de la République dominicaine République dominicaine
+EC ECU  Drapeau de l'Équateur Équateur
+EG EGY  Drapeau de l'Égypte Égypte
+EK GNQ  Drapeau de la Guinée équatoriale Guinée équatoriale
+EN EST  Drapeau de l'Estonie Estonie
+ER ERI  Drapeau de l'Érythrée Érythrée
+SV SLV  Drapeau du Salvador Salvador
+ET ETH  Drapeau de l'Éthiopie Éthiopie
+FI FIN  Drapeau de la Finlande Finlande
+FJ FJI  Drapeau des Fidji Fidji
+FR FRA  Drapeau de la France France
+FY FYR  Drapeau de la Macédoine du Nord Macédoine du Nord (le code ISO 3166-3 est MKD)
+GA GMB  Drapeau de la Gambie Gambie
+GB GAB  Drapeau du Gabon Gabon
+DE DEU  Drapeau de l'Allemagne Allemagne
+GG GEO  Drapeau de la Géorgie Géorgie
+GH GHA  Drapeau du Ghana Ghana
+GJ GRD  Drapeau de Grenade Grenade
+GR GRC  Drapeau de la Grèce Grèce
+GT GTM  Drapeau du Guatemala Guatemala
+GV GIN  Drapeau de la Guinée Guinée
+GY GUY  Drapeau du Guyana Guyana
+HA HTI  Drapeau d'Haïti Haïti
+HO HND  Drapeau du Honduras Honduras
+HR HRV  Drapeau de la Croatie Croatie
+HU HUN  Drapeau de la Hongrie Hongrie
+IC ISL  Drapeau de l'Islande Islande
+ID IDN  Drapeau de l'Indonésie Indonésie
+IE IRL  Drapeau de l'Irlande Irlande
+IN IND  Drapeau de l'Inde Inde
+IR IRN  Drapeau de l'Iran Iran
+IS ISR  Drapeau d’Israël Israël
+IT ITA  Drapeau de l'Italie Italie
+IV CIV  Drapeau de la Côte d'Ivoire Côte d'Ivoire
+IZ IRQ  Drapeau de l'Irak Irak
+JA JPN  Drapeau du Japon Japon
+JM JAM  Drapeau de la Jamaïque Jamaïque
+JO JOR  Drapeau de la Jordanie Jordanie
+KE KEN  Drapeau du Kenya Kenya
+KG KGZ  Drapeau du Kirghizistan Kirghizistan
+KN PRK  Drapeau de la Corée du Nord Corée du Nord
+KR KIR  Drapeau des Kiribati Kiribati
+KS KOR  Drapeau de la Corée du Sud Corée du Sud
+KU KWT  Drapeau du Koweït Koweït
+KZ KAZ  Drapeau du Kazakhstan Kazakhstan
+LA LAO  Drapeau du Laos Laos
+LE LBN  Drapeau du Liban Liban
+LG LVA  Drapeau de la Lettonie Lettonie
+LH LTU  Drapeau de la Lituanie Lituanie
+LI LBR  Drapeau du Libéria Liberia
+LS LIE  Drapeau du Liechtenstein Liechtenstein
+LT LSO  Drapeau du Lesotho Lesotho
+LU LUX  Drapeau du Luxembourg Luxembourg
+LY LBY  Drapeau de la Libye Libye
+MA MDG  Drapeau de Madagascar Madagascar
+MD MDA  Flag of Moldova.svg République de Moldavie
+MG MNG  Drapeau de la Mongolie Mongolie
+MI MWI  Drapeau du Malawi Malawi
+ML MLI  Drapeau du Mali Mali
+MN MCO  Drapeau de Monaco Monaco
+MO MAR  Drapeau du Maroc Maroc
+MP MUS  Drapeau de Maurice Maurice
+MR MRT  Drapeau de la Mauritanie Mauritanie
+MT MLT  Drapeau de Malte Malte
+MU OMN  Drapeau d'Oman Oman
+MV MDV  Drapeau des Maldives Maldives
+MX MEX  Drapeau du Mexique Mexique
+MY MYS  Drapeau de la Malaisie Malaisie
+MZ MOZ  Drapeau du Mozambique Mozambique
+NG NER  Drapeau du Niger Niger
+NH VUT  Drapeau du Vanuatu Vanuatu
+NI NGA  Drapeau du Nigeria Nigeria
+NL NLD  Drapeau des Pays-Bas Pays-Bas
+NO NOR  Drapeau de la Norvège Norvège
+NP NPL  Drapeau du Népal Népal
+NR NRU  Drapeau de Nauru Nauru
+NS SUR  Drapeau du Suriname Suriname
+NU NIC  Drapeau du Nicaragua Nicaragua
+NZ NZL  Drapeau de la Nouvelle-Zélande Nouvelle-Zélande
+PA PRY  Drapeau du Paraguay Paraguay
+PE PER  Drapeau du Pérou Pérou
+PK PAK  Drapeau du Pakistan Pakistan
+PL POL  Drapeau de la Pologne Pologne
+PM PAN  Drapeau du Panama Panama
+PO PRT  Drapeau du Portugal Portugal
+PP PNG  Drapeau de la Papouasie-Nouvelle-Guinée Papouasie-Nouvelle-Guinée
+PU GNB  Drapeau de la Guinée-Bissau Guinée-Bissau
+PW PLW  Drapeau des Palaos Palaos
+QA QAT  Drapeau du Qatar Qatar
+RO ROU  Drapeau de la Roumanie Roumanie
+RP PHL  Drapeau des Philippines Philippines
+RQ PRI  Drapeau de Porto Rico Porto Rico
+RS RUS  Drapeau de la Russie Russie
+RW RWA  Drapeau du Rwanda Rwanda
+SA SAU  Drapeau de l'Arabie saoudite Arabie saoudite
+SC KNA  Drapeau de Saint-Christophe-et-Niévès Saint-Christophe-et-Niévès
+SE SYC  Drapeau des Seychelles Seychelles
+SF ZAF  Drapeau d'Afrique du Sud Afrique du Sud
+SG SEN  Drapeau du Sénégal Sénégal
+SI SVN  Drapeau de la Slovénie Slovénie
+SK SVK  Drapeau de la Slovaquie Slovaquie
+SL SLE  Drapeau de Sierra Leone Sierra Leone
+SM SMR  Drapeau de Saint-Marin Saint-Marin
+SN SGP  Drapeau de Singapour Singapour
+SO SOM  Drapeau de la Somalie Somalie
+ES ESP  Drapeau de l'Espagne Espagne
+ST LCA  Drapeau de Sainte-Lucie Sainte-Lucie
+SU SDN  Drapeau du Soudan Soudan
+SE SWE  Drapeau de la Suède Suède
+SY SYR  Drapeau de la Syrie Syrie
+SZ CHE  Drapeau de la Suisse Suisse
+TC ARE  Drapeau des Émirats arabes unis Émirats arabes unis
+TD TTO  Drapeau de Trinité-et-Tobago Trinité-et-Tobago
+TM TLS  Drapeau du Timor oriental Timor oriental
+TH THA  Drapeau de la Thaïlande Thaïlande
+TI TJK  Drapeau du Tadjikistan Tadjikistan
+TN TON  Drapeau des Tonga Tonga
+TO TGO  Drapeau du Togo Togo
+TP STP  Drapeau de Sao Tomé-et-Principe Sao Tomé-et-Principe
+TS TUN  Drapeau de la Tunisie Tunisie
+TU TUR  Drapeau de la Turquie Turquie
+TV TUV  Drapeau des Tuvalu Tuvalu
+TW TWN  Drapeau de la République de Chine Taïwan
+TX TKM  Drapeau du Turkménistan Turkménistan
+TZ TZN  Drapeau de la Tanzanie Tanzanie
+UG UGA  Drapeau de l'Ouganda Ouganda
+UK GBR  Drapeau : Royaume-Uni Royaume-Uni (Grande-Bretagne)
+UA UKR  Drapeau de l'Ukraine Ukraine
+US USA  Drapeau des États-Unis États-Unis
+UV BFA  Drapeau du Burkina Faso Burkina Faso
+UY URY  Drapeau de l'Uruguay Uruguay
+UZ UZB  Drapeau de l'Ouzbékistan Ouzbékistan
+VC VCT  Drapeau de Saint-Vincent-et-les-Grenadines Saint-Vincent-et-les-Grenadines
+VE VEN  Drapeau du Venezuela Venezuela
+VN VNM  Drapeau de la République socialiste du Viêt Nam Vietnam
+VT VAT  Drapeau du Vatican Vatican
+WA NAM  Drapeau de la Namibie Namibie
+WS WSM  Drapeau des Samoa Samoa
+WZ SWZ  Drapeau de l'Eswatini Swaziland
+YE YEM  Drapeau du Yémen Yémen
+ZA ZMB  Drapeau de la Zambie Zambie
+ZI ZWE  Drapeau du Zimbabwe Zimbabwe
+SRB Serbie
